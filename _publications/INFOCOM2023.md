@@ -6,7 +6,7 @@ permalink: /publication/INFOCOM2023
 excerpt: ''
 date: 2023-05-18
 venue: 'IEEE INFOCOM 2023 - IEEE Conference on Computer Communications'
-slidesurl: 'http://academicpages.github.io/files/INFOCOM2023.pptx'
+slidesurl: 'http://vishakha-ramani.github.io/files/INFOCOM2023.pptx'
 paperurl: 'https://ieeexplore.ieee.org/document/10229077'
 # citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
