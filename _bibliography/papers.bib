@@ -1,0 +1,100 @@
+---
+---
+
+@article{ramani2026disaggregate,
+  title={Performance Modeling for Disaggregated Prefill-Decode LLM Inference Serving},
+  author={Ramani, Vishakha and Tantawi, Asser},
+  booktitle={Manuscript in preparation},
+  year={2026},
+  selected={true},
+  abstract={Modern large language model inference systems increasingly disaggregate the prefill and decode phases of generation onto distinct hardware pools. This separation improves utilization, but it also breaks the single-queue abstraction that classical queueing analyses rely on. We develop a performance model for disaggregated prefill-decode (P/D) inference that treats the two phases as coupled queueing stations with phase-dependent service requirements. The model captures the interaction between prefill batching, decode iteration scheduling, and KV-cache transfer, and yields closed-form expressions for end-to-end latency and throughput under realistic request mixes. We use the model to characterize when disaggregation strictly dominates a co-located baseline and to derive sizing rules for the prefill and decode pools.}
+}
+
+@article{ramani2026queueing,
+  title={A Queueing-Theoretic Framework for Scheduling and Autoscaling LLM Inference},
+  author={Ramani, Vishakha},
+  booktitle={Manuscript in preparation},
+  year={2026},
+  selected={true},
+  abstract={Production large language model inference deployments must hold latency Service Level Objectives under bursty, heterogeneous request mixes while keeping accelerator utilization high. We propose a queueing-theoretic framework that unifies request-level scheduling and replica-level autoscaling for prefill-decode disaggregated systems. The framework treats Service Level Objective compliance as a stability constraint on a multi-class queueing network and uses Lyapunov drift-plus-penalty optimization to derive scheduling and scaling policies that are provably stable whenever the offered load is within capacity. We show how the framework specializes to the Workload Variant Autoscaler design used in the open-source llm-d project and how it generalizes to alternative SLO formulations.}
+}
+
+@inproceedings{malvankar2026wva,
+  title={WVA: A Workload Variant Autoscaler for Disaggregated LLM Inference Serving},
+  author={Malvankar, Abhishek and Ramani, Vishakha and others},
+  booktitle={IEEE International Conference on Cloud Computing (CLOUD)},
+  year={2026},
+  selected={true}
+}
+
+@article{abdelzaher2025bottlenecks,
+  title={Bottlenecks of AI Inference: A Performance-Modeling Perspective},
+  author={Abdelzaher, Tarek and Ramani, Vishakha and others},
+  journal={Real-Time Systems},
+  year={2025},
+  selected={true}
+}
+
+@inproceedings{ramani2024multistep,
+  title={Optimal Scheduling for Multi-Step Status Update Processing},
+  author={Ramani, Vishakha and Yates, Roy D.},
+  booktitle={Asilomar Conference on Signals, Systems, and Computers},
+  year={2024}
+}
+
+@inproceedings{ramani2024memory,
+  title={Memory-Efficient Status Update Storage with Age Constraints},
+  author={Ramani, Vishakha and Yates, Roy D.},
+  booktitle={IEEE International Symposium on Information Theory (ISIT)},
+  year={2024}
+}
+
+@inproceedings{ramani2023multisource,
+  title={Multi-Source Status Updating with Heterogeneous Freshness Requirements},
+  author={Ramani, Vishakha and Yates, Roy D.},
+  booktitle={International Symposium on Modeling and Optimization in Mobile, Ad hoc, and Wireless Networks (WiOpt)},
+  year={2023}
+}
+
+@inproceedings{ramani2023locks,
+  title={Lock-Based or Lock-Less, Which is Fresh?},
+  author={Ramani, Vishakha and Yates, Roy D.},
+  booktitle={IEEE INFOCOM},
+  year={2023},
+  selected={true}
+}
+
+@inproceedings{ramani2024rcu,
+  title={Read-Copy-Update for Status Updating Systems},
+  author={Ramani, Vishakha and Yates, Roy D.},
+  booktitle={IEEE INFOCOM Workshops},
+  year={2024}
+}
+
+@inproceedings{ramani2023mobile,
+  title={Mobile Edge Status Updating under Energy and Freshness Constraints},
+  author={Ramani, Vishakha and Yates, Roy D.},
+  booktitle={IEEE INFOCOM Workshops},
+  year={2023}
+}
+
+@article{ramani2017cognitive,
+  title={Cognitive Radio Spectrum Sensing under Imperfect Channel Conditions},
+  author={Ramani, Vishakha and others},
+  journal={China Communications},
+  year={2017}
+}
+
+@phdthesis{ramani2024phdthesis,
+  title={Storing, Retrieving, and Processing Updates: A Timeliness Perspective},
+  author={Ramani, Vishakha},
+  school={Rutgers University},
+  year={2024}
+}
+
+@mastersthesis{ramani2020msthesis,
+  title={I-MAC: An ICN Based Radio Access Network Architecture},
+  author={Ramani, Vishakha},
+  school={Rutgers University},
+  year={2020}
+}
