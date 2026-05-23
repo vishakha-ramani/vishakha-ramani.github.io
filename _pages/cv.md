@@ -2,12 +2,12 @@
 layout: page
 permalink: /cv/
 title: cv
-nav: true
+nav: false
 nav_order: 4
 cv_pdf: /assets/pdf/cv_academic.pdf
 ---
 
-<!-- A longer, narrative-style CV with detailed project descriptions and citation counts is also available at [cv.pdf](/assets/pdf/cv.pdf). -->
+A longer, narrative-style CV with detailed project descriptions and citation counts is also available at [cv.pdf](/assets/pdf/cv.pdf).
 
 ## Research Interests
 
