@@ -70,6 +70,6 @@ A growing thread in my work is integrating analytical performance models with th
 
 ## Outside of research
 
-I follow professional road cycling closely. The 2026 men's spring gave us two long-awaited firsts. Tadej Pogačar finally won Milan-San Remo, holding off Tom Pidcock by half a wheel on the Via Roma after riding much of the final 30 km on a cracked frame from an earlier crash, and three weeks later Wout van Aert finally won Paris-Roubaix, outsprinting Pogačar in the velodrome on the fastest edition in the race's history. Pogačar then took Liège-Bastogne-Liège for the fourth time, with the 19-year-old French rider Paul Seixas in second, confirming his status as the most-discussed grand tour prospect in a decade. The women's spring belongs to Demi Vollering, who moved from SD Worx-Protime to FDJ-Suez over the winter and won Omloop, Flanders, Flèche Wallonne, and Liège-Bastogne-Liège in a single calendar. The Giro is in its final days as I write this. Jonas Vingegaard has taken the maglia rosa from early surprise leader Afonso Eulálio after four mountain stage wins, and now leads Felix Gall by four minutes ahead of the Rome finale.
+I follow professional road cycling closely, both the men's and women's calendars. The spring classics and the three grand tours are the highlights of my year, with the cobbled monuments and the high mountains drawing the most committed watching. See [/now](/now/) for the current race I am following.
 
 Away from the bike, I play piano on occasion.
