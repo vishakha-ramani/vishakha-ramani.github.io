@@ -6,7 +6,7 @@ nav: true
 nav_order: 5
 ---
 
-A running tracker of what I am following in professional road cycling, updated when something noteworthy happens. Inspired by Derek Sivers' [/now](https://nownownow.com/about).
+A running tracker of what I am following in professional road cycling, updated when something noteworthy happens.
 
 **Last updated.** 2026-05-27.
 
