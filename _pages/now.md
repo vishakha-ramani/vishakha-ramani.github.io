@@ -17,9 +17,10 @@ A running tracker of what I am following in professional road cycling, updated w
 ## 2026 men's spring classics
 
 - **Milan-San Remo (21 March).** Tadej Pogačar finally wins MSR, holding off Tom Pidcock by half a wheel on the Via Roma after riding much of the final 30 km on a cracked frame from an earlier crash. His first MSR after four straight near-misses.
-- **Tour of Flanders (5 April).** Pogačar wins his third Flanders, joining the all-time tied lead of Boonen, Cancellara, Museeuw, van der Poel, and the historic three-time greats.
+- **Tour of Flanders (5 April).** Pogačar wins his third Flanders, joining the all-time tied lead of Boonen, Cancellara, Museeuw, van der Poel, and the historic three-time greats. Remco Evenepoel takes third on his Flanders debut, the first sign that his winter transfer to Red Bull-Bora-Hansgrohe came with a real cobbled program.
 - **Paris-Roubaix (12 April).** Wout van Aert finally wins, outsprinting Pogačar in the velodrome on the fastest edition in the race's history at 48.91 km/h average. First Belgian winner since 2019. Mathieu van der Poel finishes fourth, ending his three-year Roubaix run.
-- **Liège-Bastogne-Liège (26 April).** Pogačar wins his fourth LBL, drawing closer to Eddy Merckx's record. The 19-year-old French rider Paul Seixas finishes second, Remco Evenepoel third.
+- **Amstel Gold Race (19 April).** Evenepoel wins his first Amstel, the second new race on his palmarès in two weeks.
+- **Liège-Bastogne-Liège (26 April).** Pogačar wins his fourth LBL, drawing closer to Eddy Merckx's record. The 19-year-old French rider Paul Seixas finishes second, the kind of ride that has the French cycling press calling him the most credible grand tour prospect the country has produced in a decade. Evenepoel takes third for his second Ardennes podium of the spring.
 
 ## 2026 women's spring
 
