@@ -27,6 +27,6 @@ Demi Vollering's first season at FDJ-Suez has been a sweep. Omloop Het Nieuwsbla
 
 ## What I'm watching for next
 
-- The Critérium du Dauphiné (7-14 June) and the Tour de Suisse (14-21 June), the two main Tour de France warm-ups. With Vingegaard riding into the Giro finale in form, the question for the Dauphiné is whether Pogačar shows up sharp or saves it all for July.
+- The Tour Auvergne-Rhône-Alpes (7-14 June), as ASO would like us to call the Dauphiné now, and the Tour de Suisse (14-21 June). These are the two main Tour de France warm-ups, and going by every preview I've read, the riders, teams, and commentators have all collectively decided the rebrand isn't happening. With Vingegaard riding into the Giro finale in form, the question for the Dauphiné is whether Pogačar shows up sharp or saves it all for July.
 - The Tour de France in July, where Pogačar and Vingegaard are the obvious favorites and the rest of the GC field is unusually thin.
 - The Tour de France Femmes later in the summer, with Vollering chasing the title she lost by four seconds in 2024.
