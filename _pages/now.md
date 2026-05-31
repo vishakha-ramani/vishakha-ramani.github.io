@@ -8,11 +8,11 @@ nav_order: 5
 
 A running tracker of what I am following in professional road cycling, updated when something noteworthy happens.
 
-**Last updated.** 2026-05-27.
+**Last updated.** 2026-05-31.
 
 ## Right now
 
-**Giro d'Italia 2026.** Final week. Jonas Vingegaard has taken the maglia rosa from early surprise leader Afonso Eulálio after four mountain stage wins, and now leads Felix Gall by four minutes ahead of the Rome finale on Sunday 31 May. Thymen Arensman is third at 4'27", Jai Hindley fourth at 5'00", and Eulálio fifth at 5'40" while still leading the young rider classification. Jhonatan Narváez has been the breakout opportunist with three stage wins and the points jersey.
+**Giro d'Italia 2026.** Finished today in Rome. Jonas Vingegaard takes the maglia rosa with five stage wins, ahead of Felix Gall at 5'22" and Jai Hindley at 6'25". Afonso Eulálio holds the young rider jersey after starting the race in pink and surviving the final week's mountains. Giulio Ciccone wins the mountains classification, Paul Magnier the points jersey, and Visma-Lease a Bike the team classification. Sepp Kuss took stage 19 into Alleghe; Jonathan Milan won the bunch sprint into Rome.
 
 ## 2026 men's spring classics
 
@@ -27,6 +27,6 @@ Demi Vollering's first season at FDJ-Suez has been a sweep. Omloop Het Nieuwsbla
 
 ## What I'm watching for next
 
-- The Critérium du Dauphiné and the Tour de Suisse, the two main Tour de France warm-ups in June.
+- The Critérium du Dauphiné (7-14 June) and the Tour de Suisse (14-21 June), the two main Tour de France warm-ups. With Vingegaard riding into the Giro finale in form, the question for the Dauphiné is whether Pogačar shows up sharp or saves it all for July.
 - The Tour de France in July, where Pogačar and Vingegaard are the obvious favorites and the rest of the GC field is unusually thin.
 - The Tour de France Femmes later in the summer, with Vollering chasing the title she lost by four seconds in 2024.
