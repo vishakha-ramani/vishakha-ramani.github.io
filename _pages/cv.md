@@ -15,9 +15,9 @@ Performance modeling and analysis of large-scale systems, queueing theory and st
 
 ## Education
 
-**Rutgers University, New Brunswick.** Ph.D., Electrical and Computer Engineering, 2020 to 2024. Dissertation: [*Storing, Retrieving, and Processing Updates: A Timeliness Perspective*](/assets/pdf/Thesis_VR.pdf). Advisor: [Professor Roy D. Yates](https://www.winlab.rutgers.edu/~ryates/) (WINLAB).
+**Rutgers University, New Brunswick.** Ph.D., Electrical and Computer Engineering, 2020 to 2024. Dissertation: [_Storing, Retrieving, and Processing Updates: A Timeliness Perspective_](/assets/pdf/Thesis_VR.pdf). Advisor: [Professor Roy D. Yates](https://www.winlab.rutgers.edu/~ryates/) (WINLAB).
 
-**Rutgers University.** M.S., Electrical and Computer Engineering, 2017 to 2019. Thesis: *I-Mac: An ICN Based Radio Access Network Architecture*. Advisor: Professor Dipankar Raychaudhuri.
+**Rutgers University.** M.S., Electrical and Computer Engineering, 2017 to 2019. Thesis: _I-Mac: An ICN Based Radio Access Network Architecture_. Advisor: Professor Dipankar Raychaudhuri.
 
 **Rajiv Gandhi Prodyogiki Vishwavidyalaya.** B.Tech. and M.Tech. (dual degree), Electronics and Communication Engineering, 2011 to 2016.
 
@@ -27,21 +27,21 @@ Performance modeling and analysis of large-scale systems, queueing theory and st
 
 - Co-architect of the Workload Variant Autoscaler (WVA) for [llm-d](https://github.com/llm-d), an open-source Kubernetes-native LLM inference system ([WVA repo](https://github.com/llm-d/llm-d-workload-variant-autoscaler), [llm-d architecture docs](https://llm-d.ai/docs/architecture)). Produced the first end-to-end system design and led the autoscaling effort with the broader llm-d community.
 - Designed and implemented the queueing model analyzer at the analytical core of WVA. The analyzer is a hardware-aware performance model of LLM inference that predicts time-to-first-token and inter-token latency, and computes the maximum sustainable request rate per replica under SLO constraints. Model parameters are learned online via a Kalman filter, removing the need for offline profiling.
-- Co-authored the WVA system paper, A. Malvankar et al., *WVA: A Global Optimization Control Plane for llm-d*, IEEE CLOUD 2026 (to appear).
-- Contributed analysis to T. Abdelzaher et al., *The Bottlenecks of AI*, Real-Time Systems, vol. 61, 2025, framing open problems in scaling inference serving under latency SLOs, GPU memory management, and orchestration of heterogeneous accelerators.
+- Co-authored the WVA system paper, A. Malvankar et al., _WVA: A Global Optimization Control Plane for llm-d_, IEEE CLOUD 2026 (to appear).
+- Contributed analysis to T. Abdelzaher et al., _The Bottlenecks of AI_, Real-Time Systems, vol. 61, 2025, framing open problems in scaling inference serving under latency SLOs, GPU memory management, and orchestration of heterogeneous accelerators.
 - Developing an analytical framework for prefill-decode disaggregation, deriving a dynamic scheduling threshold via Lyapunov optimization on a tandem queueing model with provable throughput and latency guarantees (manuscript in preparation).
 - Applying the AI-Driven Research for Systems methodology of [Liu et al.](https://arxiv.org/abs/2510.06189) to scheduling and autoscaling problems in llm-d, contributing analytical performance models that supply provable guarantees for algorithms discovered by the agentic search loop. Related open-source team artifacts include [BLIS](https://github.com/inference-sim/inference-sim), the simulation substrate, and [Agentic Strategy Evolution](https://github.com/AI-native-Systems-Research/agentic-strategy-evolution), the search loop.
 
 **Graduate Research Assistant**, Rutgers University, New Brunswick. September 2018 to October 2024.
 
-*Ph.D. research, Age of Information in computing systems.*
+_Ph.D. research, Age of Information in computing systems._
 
-- *AoI in shared memory and synchronization.* Analyzed the impact of synchronization primitive choice (lock-based reader-writer locks vs. lock-free Read-Copy-Update) on information freshness in shared-memory status-updating systems. Showed that the optimal choice depends on the update rate regime, with lock-based primitives favoring high-rate workloads and lock-free favoring low-rate workloads. Characterized age-memory trade-offs in RCU systems (INFOCOM 2023, INFOCOM 2024 Workshop).
-- *Optimal memory access policies.* Formulated an optimal memory sampling problem in status-updating systems and proved the optimal policy is a stationary, deterministic threshold-type policy. Derived closed-form AoI expressions (ISIT 2024).
-- *Multi-source and multi-step update processing.* Developed analytical models for AoI in publish-subscribe systems with multiple sources, showing a lazy computation policy can reduce average AoI at the monitor (WiOpt 2023). Extended to multi-step pipelines, identifying wasted computation when processing effort does not reduce age, and optimized service rates under power constraints (Asilomar 2024).
-- *Experimental timeliness in mobile networks.* DPDK-based testbed studies of timely packet routing, demonstrating AoI sensitivity to offered load and concurrency constructs in real deployments (INFOCOM 2023 Workshop).
+- _AoI in shared memory and synchronization._ Analyzed the impact of synchronization primitive choice (lock-based reader-writer locks vs. lock-free Read-Copy-Update) on information freshness in shared-memory status-updating systems. Showed that the optimal choice depends on the update rate regime, with lock-based primitives favoring high-rate workloads and lock-free favoring low-rate workloads. Characterized age-memory trade-offs in RCU systems (INFOCOM 2023, INFOCOM 2024 Workshop).
+- _Optimal memory access policies._ Formulated an optimal memory sampling problem in status-updating systems and proved the optimal policy is a stationary, deterministic threshold-type policy. Derived closed-form AoI expressions (ISIT 2024).
+- _Multi-source and multi-step update processing._ Developed analytical models for AoI in publish-subscribe systems with multiple sources, showing a lazy computation policy can reduce average AoI at the monitor (WiOpt 2023). Extended to multi-step pipelines, identifying wasted computation when processing effort does not reduce age, and optimized service rates under power constraints (Asilomar 2024).
+- _Experimental timeliness in mobile networks._ DPDK-based testbed studies of timely packet routing, demonstrating AoI sensitivity to offered load and concurrency constructs in real deployments (INFOCOM 2023 Workshop).
 
-*M.S. research, ICN-based wireless access networks.*
+_M.S. research, ICN-based wireless access networks._
 
 - Designed an Information-Centric Networking based RAN protocol for LTE enabling efficient wireless multicast via a cross-layer architecture integrating ICN identifiers with LTE RAN. Verified with NS-3 and SUMO simulations.
 - Designed a scalable ICN-based MAC scheduling algorithm using convex optimization for joint resource allocation across unicast and multicast user groups.
@@ -69,7 +69,7 @@ Performance modeling and analysis of large-scale systems, queueing theory and st
 
 ## Invention Disclosures
 
-A. Malvankar, A. Tantawi, **V. Ramani**, T. Eilam, M. Abdi. *System and Method for Efficient SLO-Aware Autoscaling of AI Inference Workloads.* IBM Invention Disclosure P202503087, 2025.
+A. Malvankar, A. Tantawi, **V. Ramani**, T. Eilam, M. Abdi. _System and Method for Efficient SLO-Aware Autoscaling of AI Inference Workloads._ IBM Invention Disclosure P202503087, 2025.
 
 ## Honors and Awards
 
