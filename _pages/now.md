@@ -8,11 +8,13 @@ nav_order: 5
 
 A running tracker of what I am following in professional road cycling, updated when something noteworthy happens.
 
-**Last updated.** 2026-06-03.
+**Last updated.** 2026-06-09.
 
 ## Right now
 
-**Giro d'Italia Women 2026.** Stage 5 of 9 today, race runs through June 7. Anna van der Breggen leads the GC after winning stage 4's uphill time trial at Nevegal — 12.7 km at a punishing 10.3% average in the opening 5 km — finishing in 31:38, her first pink jersey since winning the 2021 edition. Marlen Reusser sits second at 1'04", Demi Vollering third at 1'10". Elisa Balsamo won stages 1–3 with sprint finishes and held the pink jersey through the race's opening days. The week has not been without controversy: Lorena Wiebes originally won stage 1 but was disqualified when her bike weighed 20 grams under the UCI's 6.8 kg minimum. Team SD Worx–Protime called it "an exceptionally severe sanction," Specialized CEO Mike Sinyard asked "Can you imagine if this was Cavendish, Remco or Sagan?", and Wiebes' agent said the ruling "brings cycling into disrepute."
+**Tour Auvergne-Rhône-Alpes (Dauphiné) 2026.** Stage 3 of 8 today (a 28.4 km TTT in Perreux), race runs through June 13. Alex Baudin (EF Education-EasyPost) leads the GC after a remarkable stage 1, where he spent 120 km in the break and rode the final 28 km solo into Saint-Ismier. Anthon Charmig (Uno-X Mobility) won stage 2 solo from a break but did not take the jersey — EF rode tempo to protect Baudin's lead. Neither Pogačar nor Vingegaard are in the race, which gives the whole week a different character: Jorgenson lost time on stage 1 and is already frustrated ("You can't follow everyone"), Evenepoel is absent despite his bike appearing at sign-on, and Wout van Aert is making his return to racing here for the first time since Paris-Roubaix.
+
+**Giro d'Italia Women 2026.** Finished June 7. Demi Vollering (FDJ United-SUEZ) won the title in dramatic fashion, overturning Anna van der Breggen's 1'10" GC lead on the final stage. Antonia Niedermaier (Canyon-SRAM) finished second overall; van der Breggen dropped to third, saying "I tried, and I kept the pace in it, but it was not enough." Vollering said before her decisive move: "I had to dare to lose it all." Elisa Balsamo took the points classification, Isabella Holmgren the white jersey, and Lidl-Trek the team prize. The win also completes what has been an extraordinary women's spring for Vollering — Omloop, Flanders, Flèche Wallonne, Liège, and now the Giro.
 
 **Giro d'Italia 2026.** Finished May 31 in Rome. Jonas Vingegaard took the maglia rosa with five stage wins, ahead of Felix Gall at 5'22" and Jai Hindley at 6'25". Afonso Eulálio held the young rider jersey after starting the race in pink and surviving the final week's mountains. Giulio Ciccone won the mountains classification, Paul Magnier the points jersey, and Visma-Lease a Bike the team classification. Sepp Kuss took stage 19 into Alleghe; Jonathan Milan won the bunch sprint into Rome.
 
@@ -30,7 +32,7 @@ Demi Vollering's first season at FDJ-Suez has been a sweep. Omloop Het Nieuwsbla
 
 ## What I'm watching for next
 
-- The Giro Donne finale through June 7. Van der Breggen leads by just over a minute, but Vollering at 1'10" is dangerous in the remaining mountain stages. A third Giro title for van der Breggen would be extraordinary.
-- The Tour Auvergne-Rhône-Alpes (7-13 June), as ASO would like us to call the Dauphiné now, and the Tour de Suisse (14-21 June). These are the two main Tour de France warm-ups, and going by every preview I've read, the riders, teams, and commentators have all collectively decided the rebrand isn't happening. With Vingegaard riding into the Giro finale in form, the question for the Dauphiné is whether Pogačar shows up sharp or saves it all for July. Matteo Jorgenson has already dropped the Tour de Suisse from his schedule, trimming the pre-July field.
+- The remaining Dauphiné stages through June 13. With Pogačar and Vingegaard both absent, this is a race without a clear favorite for the GC, which makes it genuinely interesting rather than just a tune-up. The TTT today will reshuffle things; the mountain stages this week will tell us something about who is ready for July.
+- The Tour de Suisse (14–21 June). Pidcock is reported to be altitude training and targeting the race. Vingegaard will likely appear here given his Giro form.
 - The Tour de France in July, where Pogačar and Vingegaard are the obvious favorites and the rest of the GC field is unusually thin. The Grand Départ is in Barcelona, where Catalan independence groups have announced plans for "major protests."
-- The Tour de France Femmes later in the summer, with Vollering chasing the title she lost by four seconds in 2024.
+- The Tour de France Femmes later in the summer, with Vollering chasing the title she lost by four seconds in 2024. After this spring, she is in the form of her career.
