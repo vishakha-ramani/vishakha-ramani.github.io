@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-05'
+  last_updated: '2026-06-24'
 papers:
   eJg7gqwAAAAJ:2osOgNQ5qMEC:
     citations: 0
@@ -14,8 +14,8 @@ papers:
     title: 'Storing, Retrieving, and Processing Updates: A Timeliness Perspective'
     year: '2024'
   eJg7gqwAAAAJ:LkGwnXOMwfcC:
-    citations: 1
-    title: 'WVA: A Global Optimization Control Plane for llmd'
+    citations: 2
+    title: 'WVA: A Global Optimization Control Plane for LLMD'
     year: '2026'
   eJg7gqwAAAAJ:UeHWp8X0CEIC:
     citations: 85
