@@ -1,0 +1,62 @@
+<svg viewBox="0 0 640 300" role="img" aria-label="Packet forwarding testbed with sender and receiver sharing one clock" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="p2tb-a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-line)"/>
+    </marker>
+  </defs>
+
+  <!-- source machine -->
+  <rect x="20" y="40" width="250" height="220" rx="8" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="145" y="64" text-anchor="middle" font-size="13.5" font-weight="600" style="fill: var(--fig-line)">Source machine</text>
+  <rect x="45" y="85" width="120" height="44" rx="6" style="fill: none; stroke: var(--fig-line); stroke-width: 1.25"/>
+  <text x="105" y="112" text-anchor="middle" font-size="12.5" style="fill: var(--fig-line)">Sender thread</text>
+  <rect x="45" y="185" width="120" height="44" rx="6" style="fill: none; stroke: var(--fig-line); stroke-width: 1.25"/>
+  <text x="105" y="212" text-anchor="middle" font-size="12.5" style="fill: var(--fig-line)">Receiver thread</text>
+
+  <!-- shared clock -->
+  <circle cx="215" cy="157" r="16" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <line x1="215" y1="157" x2="215" y2="146" style="stroke: var(--fig-line); stroke-width: 1.25"/>
+  <line x1="215" y1="157" x2="223" y2="161" style="stroke: var(--fig-line); stroke-width: 1.25"/>
+  <text x="215" y="196" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">one clock</text>
+  <line x1="201" y1="148" x2="168" y2="115" stroke-dasharray="2 3" style="stroke: var(--fig-muted); stroke-width: 0.9"/>
+  <line x1="201" y1="166" x2="168" y2="199" stroke-dasharray="2 3" style="stroke: var(--fig-muted); stroke-width: 0.9"/>
+
+  <!-- link streams -->
+  <text x="320" y="76" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">25 Gbps</text>
+  <line x1="272" y1="95" x2="388" y2="95" stroke-dasharray="5 4" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#p2tb-a)"/>
+  <text x="320" y="88" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">location updates</text>
+  <line x1="272" y1="130" x2="388" y2="130" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#p2tb-a)"/>
+  <text x="320" y="122" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">app updates</text>
+  <line x1="366" y1="207" x2="276" y2="207" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#p2tb-a)"/>
+  <text x="320" y="226" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">addressed updates return</text>
+
+  <!-- forwarder -->
+  <rect x="370" y="40" width="250" height="220" rx="8" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="495" y="64" text-anchor="middle" font-size="13.5" font-weight="600" style="fill: var(--fig-line)">Forwarder</text>
+
+  <!-- control ring -->
+  <rect x="392" y="85" width="72" height="20" rx="3" style="fill: none; stroke: var(--fig-line); stroke-width: 1.25"/>
+  <line x1="410" y1="85" x2="410" y2="105" style="stroke: var(--fig-line); stroke-width: 0.75"/>
+  <line x1="428" y1="85" x2="428" y2="105" style="stroke: var(--fig-line); stroke-width: 0.75"/>
+  <line x1="446" y1="85" x2="446" y2="105" style="stroke: var(--fig-line); stroke-width: 0.75"/>
+  <text x="428" y="121" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">control ring</text>
+
+  <!-- data ring -->
+  <rect x="392" y="185" width="72" height="20" rx="3" style="fill: none; stroke: var(--fig-line); stroke-width: 1.25"/>
+  <line x1="410" y1="185" x2="410" y2="205" style="stroke: var(--fig-line); stroke-width: 0.75"/>
+  <line x1="428" y1="185" x2="428" y2="205" style="stroke: var(--fig-line); stroke-width: 0.75"/>
+  <line x1="446" y1="185" x2="446" y2="205" style="stroke: var(--fig-line); stroke-width: 0.75"/>
+  <text x="428" y="221" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">data ring</text>
+
+  <!-- FIB hash table -->
+  <text x="560" y="112" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">FIB</text>
+  <rect x="525" y="120" width="70" height="70" rx="3" style="fill: none; stroke: var(--fig-line); stroke-width: 1.25"/>
+  <line x1="525" y1="143" x2="595" y2="143" style="stroke: var(--fig-line); stroke-width: 0.75"/>
+  <line x1="525" y1="166" x2="595" y2="166" style="stroke: var(--fig-line); stroke-width: 0.75"/>
+
+  <!-- writer and reader arrows -->
+  <line x1="466" y1="102" x2="521" y2="136" stroke-dasharray="5 4" style="stroke: var(--fig-line); stroke-width: 1.25" marker-end="url(#p2tb-a)"/>
+  <text x="480" y="140" font-size="10.5" style="fill: var(--fig-muted)">write</text>
+  <line x1="466" y1="188" x2="521" y2="174" style="stroke: var(--fig-line); stroke-width: 1.25" marker-end="url(#p2tb-a)"/>
+  <text x="480" y="200" font-size="10.5" style="fill: var(--fig-muted)">read</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg viewBox="0 0 640 320" role="img" aria-label="Faster writing lowers age while memory approaches its ceiling" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="p3t-m" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-muted)"/>
+    </marker>
+    <pattern id="p3t-hatch" width="12" height="12" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="12" style="stroke: var(--fig-muted); stroke-width: 1" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- axes -->
+  <line x1="80" y1="250" x2="612" y2="250" style="stroke: var(--fig-muted); stroke-width: 1.25" marker-end="url(#p3t-m)"/>
+  <line x1="80" y1="250" x2="80" y2="38" style="stroke: var(--fig-muted); stroke-width: 1.25" marker-end="url(#p3t-m)"/>
+  <text x="340" y="282" text-anchor="middle" font-size="12.5" style="fill: var(--fig-muted)">average number of versions in memory</text>
+  <text x="54" y="145" text-anchor="middle" font-size="12.5" style="fill: var(--fig-muted)" transform="rotate(-90 54 145)">average age in memory</text>
+
+  <!-- unreachable region -->
+  <rect x="470" y="55" width="130" height="195" style="fill: url(#p3t-hatch)"/>
+  <text x="535" y="150" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">unreachable</text>
+
+  <!-- the ceiling -->
+  <line x1="470" y1="250" x2="470" y2="55" stroke-dasharray="6 4" style="stroke: var(--fig-line); stroke-width: 1.4"/>
+  <text x="470" y="44" text-anchor="middle" font-size="12.5" font-weight="600" style="fill: var(--fig-line)">ceiling 1 + &#955;/&#956;</text>
+
+  <!-- trade-off curve -->
+  <path d="M95 72 C220 100 380 165 462 242" fill="none" style="stroke: var(--fig-rcu); stroke-width: 2"/>
+
+  <!-- direction of faster writing -->
+  <text x="230" y="128" font-size="12" style="fill: var(--fig-muted)">writer publishes faster</text>
+  <line x1="290" y1="140" x2="336" y2="163" style="stroke: var(--fig-muted); stroke-width: 1.1" marker-end="url(#p3t-m)"/>
+</svg>

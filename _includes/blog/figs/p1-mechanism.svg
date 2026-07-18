@@ -1,0 +1,56 @@
+<svg viewBox="0 0 640 260" role="img" aria-label="The same read request under RWL and RCU" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="p1mech-m" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-muted)"/>
+    </marker>
+  </defs>
+
+  <!-- RWL panel -->
+  <g>
+    <rect x="12" y="12" width="26" height="5" rx="2.5" style="fill: var(--fig-rwl)"/>
+    <text x="46" y="20" font-size="13.5" font-weight="600" style="fill: var(--fig-line)">Readers-Writer Lock</text>
+
+    <text x="12" y="72" font-size="12" style="fill: var(--fig-muted)">writer</text>
+    <line x1="62" y1="68" x2="298" y2="68" style="stroke: var(--fig-muted); stroke-width: 0.6"/>
+    <rect x="105" y="55" width="90" height="25" rx="4" style="fill: var(--fig-rwl)"/>
+    <text x="150" y="46" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">holds the write lock</text>
+
+    <text x="12" y="132" font-size="12" style="fill: var(--fig-muted)">reader</text>
+    <line x1="62" y1="128" x2="298" y2="128" style="stroke: var(--fig-muted); stroke-width: 0.6"/>
+    <line x1="130" y1="98" x2="130" y2="112" style="stroke: var(--fig-line); stroke-width: 1.25" marker-end="url(#p1mech-m)"/>
+    <text x="130" y="94" text-anchor="middle" font-size="10.5" style="fill: var(--fig-muted)">request</text>
+    <rect x="130" y="115" width="65" height="25" rx="4" stroke-dasharray="4 3" style="fill: var(--fig-surface); stroke: var(--fig-muted); stroke-width: 1.25"/>
+    <text x="162" y="131" text-anchor="middle" font-size="10.5" style="fill: var(--fig-muted)">waits</text>
+    <rect x="195" y="115" width="50" height="25" rx="4" style="fill: var(--fig-rwl)"/>
+
+    <line x1="62" y1="170" x2="290" y2="170" style="stroke: var(--fig-muted); stroke-width: 1" marker-end="url(#p1mech-m)"/>
+    <text x="288" y="186" text-anchor="end" font-size="11" style="fill: var(--fig-muted)">time</text>
+
+    <text x="155" y="205" text-anchor="middle" font-size="12.5" font-weight="600" style="fill: var(--fig-line)">reads the fresh address</text>
+    <text x="155" y="226" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">app update delivered correctly</text>
+  </g>
+
+  <!-- RCU panel -->
+  <g transform="translate(330 0)">
+    <rect x="12" y="12" width="26" height="5" rx="2.5" style="fill: var(--fig-rcu)"/>
+    <text x="46" y="20" font-size="13.5" font-weight="600" style="fill: var(--fig-line)">Read-Copy-Update</text>
+
+    <text x="12" y="72" font-size="12" style="fill: var(--fig-muted)">writer</text>
+    <line x1="62" y1="68" x2="298" y2="68" style="stroke: var(--fig-muted); stroke-width: 0.6"/>
+    <rect x="105" y="55" width="90" height="25" rx="4" style="fill: var(--fig-rcu)"/>
+    <text x="150" y="46" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">prepares a new copy</text>
+
+    <text x="12" y="132" font-size="12" style="fill: var(--fig-muted)">reader</text>
+    <line x1="62" y1="128" x2="298" y2="128" style="stroke: var(--fig-muted); stroke-width: 0.6"/>
+    <line x1="130" y1="98" x2="130" y2="112" style="stroke: var(--fig-line); stroke-width: 1.25" marker-end="url(#p1mech-m)"/>
+    <text x="130" y="94" text-anchor="middle" font-size="10.5" style="fill: var(--fig-muted)">request</text>
+    <rect x="130" y="115" width="50" height="25" rx="4" style="fill: var(--fig-rcu)"/>
+    <text x="207" y="152" font-size="10.5" style="fill: var(--fig-muted)">no waiting</text>
+
+    <line x1="62" y1="170" x2="290" y2="170" style="stroke: var(--fig-muted); stroke-width: 1" marker-end="url(#p1mech-m)"/>
+    <text x="288" y="186" text-anchor="end" font-size="11" style="fill: var(--fig-muted)">time</text>
+
+    <text x="155" y="205" text-anchor="middle" font-size="12.5" font-weight="600" style="fill: var(--fig-line)">reads the old copy</text>
+    <text x="155" y="226" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">app update goes to the old address</text>
+  </g>
+</svg>

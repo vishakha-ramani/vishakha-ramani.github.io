@@ -1,0 +1,71 @@
+// Figures, series navigation, and callouts for the freshness blog trilogy.
+// Entity colors are fixed across all three posts (RCU blue, RWL orange) and
+// validated for CVD separation and contrast on both surfaces.
+
+:root {
+  --fig-rcu: #2563b0;
+  --fig-rwl: #c2621a;
+  --fig-line: var(--global-text-color);
+  --fig-muted: var(--global-text-color-light);
+  --fig-surface: var(--global-bg-color);
+}
+
+html[data-theme="dark"] {
+  --fig-rcu: #4d8ed6;
+  --fig-rwl: #cf7a2e;
+}
+
+.blog-fig {
+  margin: 2.25rem auto;
+  max-width: 640px;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    text-align: center;
+    color: var(--global-text-color-light);
+  }
+}
+
+.series-nav {
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.75rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+
+  .series-nav-title {
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+}
+
+.series-nav-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 0.9rem;
+}
+
+.key-result {
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  margin: 1.75rem 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--global-text-color);
+}

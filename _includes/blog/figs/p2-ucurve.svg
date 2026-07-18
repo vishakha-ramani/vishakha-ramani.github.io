@@ -1,0 +1,28 @@
+<svg viewBox="0 0 640 300" role="img" aria-label="Average age against sending rate traces a U shape" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="p2u-m" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-muted)"/>
+    </marker>
+  </defs>
+
+  <!-- axes -->
+  <line x1="70" y1="242" x2="612" y2="242" style="stroke: var(--fig-muted); stroke-width: 1.25" marker-end="url(#p2u-m)"/>
+  <line x1="70" y1="242" x2="70" y2="38" style="stroke: var(--fig-muted); stroke-width: 1.25" marker-end="url(#p2u-m)"/>
+  <text x="340" y="272" text-anchor="middle" font-size="12.5" style="fill: var(--fig-muted)">sending rate</text>
+  <text x="46" y="140" text-anchor="middle" font-size="12.5" style="fill: var(--fig-muted)" transform="rotate(-90 46 140)">average age at the receiver</text>
+
+  <!-- batching knee guide -->
+  <line x1="380" y1="242" x2="380" y2="70" stroke-dasharray="3 4" style="stroke: var(--fig-muted); stroke-width: 1"/>
+  <text x="380" y="58" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">about 4 Mpps on our testbed</text>
+
+  <!-- the curve -->
+  <path d="M90 95 C160 160 210 182 265 183 C340 183 480 120 585 72" fill="none" style="stroke: var(--fig-line); stroke-width: 2"/>
+  <circle cx="265" cy="183" r="4.5" style="fill: var(--fig-line)"/>
+  <text x="265" y="207" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">freshest point</text>
+
+  <!-- regime annotations -->
+  <text x="215" y="82" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">more frequent updates,</text>
+  <text x="215" y="98" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">fresher information</text>
+  <text x="495" y="170" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">packets queue in batches,</text>
+  <text x="495" y="186" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">information ages</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg viewBox="0 0 640 300" role="img" aria-label="Update forwarding system with a shared forwarding table" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="p1sys-a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-line)"/>
+    </marker>
+  </defs>
+
+  <!-- application server -->
+  <rect x="20" y="115" width="130" height="64" rx="6" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="85" y="142" text-anchor="middle" font-size="13" style="fill: var(--fig-line)">Application</text>
+  <text x="85" y="160" text-anchor="middle" font-size="13" style="fill: var(--fig-line)">server</text>
+
+  <!-- app updates into forwarder -->
+  <line x1="150" y1="147" x2="214" y2="147" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#p1sys-a)"/>
+  <text x="182" y="136" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">app updates</text>
+
+  <!-- forwarder -->
+  <rect x="220" y="58" width="220" height="176" rx="8" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="330" y="82" text-anchor="middle" font-size="13.5" font-weight="600" style="fill: var(--fig-line)">Forwarder</text>
+
+  <!-- FIB table -->
+  <text x="345" y="106" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">FIB</text>
+  <rect x="285" y="112" width="120" height="78" rx="3" style="fill: none; stroke: var(--fig-line); stroke-width: 1.25"/>
+  <line x1="285" y1="138" x2="405" y2="138" style="stroke: var(--fig-line); stroke-width: 0.75"/>
+  <line x1="285" y1="164" x2="405" y2="164" style="stroke: var(--fig-line); stroke-width: 0.75"/>
+  <text x="295" y="129" font-size="10.5" style="fill: var(--fig-muted)">user 101 &#8594; addr</text>
+  <text x="295" y="155" font-size="10.5" style="fill: var(--fig-muted)">user 102 &#8594; addr</text>
+  <text x="295" y="181" font-size="10.5" style="fill: var(--fig-muted)">user 103 &#8594; addr</text>
+
+  <!-- reader lookup -->
+  <line x1="234" y1="147" x2="281" y2="147" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#p1sys-a)"/>
+  <text x="257" y="167" text-anchor="middle" font-size="10.5" style="fill: var(--fig-muted)">read</text>
+
+  <!-- writer path from below -->
+  <line x1="345" y1="230" x2="345" y2="194" stroke-dasharray="5 4" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#p1sys-a)"/>
+  <text x="354" y="216" font-size="10.5" style="fill: var(--fig-muted)">write</text>
+
+  <!-- delivery to mobile -->
+  <line x1="440" y1="147" x2="516" y2="147" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#p1sys-a)"/>
+  <text x="478" y="136" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">delivered</text>
+
+  <!-- mobile user -->
+  <rect x="520" y="100" width="58" height="96" rx="10" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <line x1="540" y1="182" x2="558" y2="182" style="stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="549" y="90" text-anchor="middle" font-size="13" style="fill: var(--fig-line)">Mobile user</text>
+  <path d="M588 122 q9 25 0 50" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.5"/>
+  <path d="M598 112 q13 35 0 70" style="fill: none; stroke: var(--fig-muted); stroke-width: 1.25"/>
+
+  <!-- location updates back to the table -->
+  <path d="M549 205 C549 268 440 270 352 240" fill="none" stroke-dasharray="5 4" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#p1sys-a)"/>
+  <text x="465" y="288" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">location updates as the user moves</text>
+</svg>
