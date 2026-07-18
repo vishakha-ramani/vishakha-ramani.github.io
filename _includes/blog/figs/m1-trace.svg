@@ -1,0 +1,40 @@
+<svg viewBox="0 0 640 430" role="img" aria-label="Autoscaling trace with observed and predicted time to first token above, replicas and load below" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="m1tr-m" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-muted)"/>
+    </marker>
+  </defs>
+
+  <!-- legend -->
+  <rect x="80" y="28" width="18" height="4" rx="2" style="fill: var(--fig-rcu)"/>
+  <text x="104" y="34" font-size="12" style="fill: var(--fig-line)">observed TTFT</text>
+  <rect x="216" y="28" width="18" height="4" rx="2" style="fill: var(--fig-rwl)"/>
+  <text x="240" y="34" font-size="12" style="fill: var(--fig-line)">model prediction</text>
+  <line x1="360" y1="30" x2="378" y2="30" stroke-dasharray="5 3" style="stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="386" y="34" font-size="12" style="fill: var(--fig-line)">50 ms target</text>
+
+  <!-- top panel: TTFT -->
+  <line x1="70" y1="190" x2="600" y2="190" style="stroke: var(--fig-muted); stroke-width: 1"/>
+  <text x="46" y="120" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)" transform="rotate(-90 46 120)">time to first token</text>
+  <line x1="70" y1="150" x2="600" y2="150" stroke-dasharray="5 3" style="stroke: var(--fig-line); stroke-width: 1.2"/>
+
+  <text x="150" y="66" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">new pod loading weights,</text>
+  <text x="150" y="81" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">about 90 seconds</text>
+  <line x1="196" y1="72" x2="224" y2="62" style="stroke: var(--fig-muted); stroke-width: 0.8"/>
+
+  <path d="M75 160 L110 156 L140 161 L170 158 L200 157 L220 150 L230 55 L240 80 L250 152 L280 156 L310 150 L325 90 L335 120 L345 153 L380 150 L420 155 L450 152 L490 157 L530 155 L570 159"
+        fill="none" style="stroke: var(--fig-rcu); stroke-width: 1.8"/>
+  <path d="M75 163 C200 161 400 158 570 160" fill="none" style="stroke: var(--fig-rwl); stroke-width: 1.8"/>
+
+  <!-- bottom panel: replicas and load -->
+  <path d="M75 360 L160 360 L200 320 L290 320 L320 285 L420 285 L450 320 L510 320 L540 360 L575 360"
+        fill="none" stroke-dasharray="5 4" style="stroke: var(--fig-muted); stroke-width: 1.5"/>
+  <path d="M75 365 L190 365 L190 340 L250 340 L250 315 L330 315 L330 290 L380 290 L380 315 L460 315 L460 340 L520 340 L520 365 L575 365"
+        fill="none" style="stroke: var(--fig-line); stroke-width: 2"/>
+  <text x="112" y="354" font-size="11.5" font-weight="600" style="fill: var(--fig-line)">replicas</text>
+  <text x="370" y="273" font-size="11.5" style="fill: var(--fig-muted)">arrival rate</text>
+
+  <!-- shared x axis -->
+  <line x1="70" y1="395" x2="600" y2="395" style="stroke: var(--fig-muted); stroke-width: 1.1" marker-end="url(#m1tr-m)"/>
+  <text x="335" y="420" text-anchor="middle" font-size="12.5" style="fill: var(--fig-muted)">elapsed time, about 38 minutes</text>
+</svg>

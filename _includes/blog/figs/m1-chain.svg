@@ -1,0 +1,43 @@
+<svg viewBox="0 0 640 230" role="img" aria-label="Birth-death chain over the number of requests, with departures speeding up until the batch cap" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="m1ch-a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-line)"/>
+    </marker>
+  </defs>
+
+  <!-- states -->
+  <circle cx="80" cy="110" r="20" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="80" y="115" text-anchor="middle" font-size="12.5" style="fill: var(--fig-line)">0</text>
+  <circle cx="190" cy="110" r="20" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="190" y="115" text-anchor="middle" font-size="12.5" style="fill: var(--fig-line)">1</text>
+  <circle cx="300" cy="110" r="20" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="300" y="115" text-anchor="middle" font-size="12.5" style="fill: var(--fig-line)">2</text>
+  <text x="370" y="115" text-anchor="middle" font-size="13" style="fill: var(--fig-muted)">&#8230;</text>
+  <circle cx="440" cy="110" r="20" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="440" y="115" text-anchor="middle" font-size="12.5" style="fill: var(--fig-line)">B</text>
+  <circle cx="550" cy="110" r="20" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="550" y="115" text-anchor="middle" font-size="12" style="fill: var(--fig-line)">B+1</text>
+
+  <!-- forward arrows (arrivals) -->
+  <path d="M96 96 Q135 74 174 96" fill="none" style="stroke: var(--fig-line); stroke-width: 1.4" marker-end="url(#m1ch-a)"/>
+  <text x="135" y="72" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">&#955;</text>
+  <path d="M206 96 Q245 74 284 96" fill="none" style="stroke: var(--fig-line); stroke-width: 1.4" marker-end="url(#m1ch-a)"/>
+  <text x="245" y="72" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">&#955;</text>
+  <path d="M316 96 Q351 76 356 92" fill="none" style="stroke: var(--fig-line); stroke-width: 1.4"/>
+  <path d="M384 92 Q391 78 424 96" fill="none" style="stroke: var(--fig-line); stroke-width: 1.4" marker-end="url(#m1ch-a)"/>
+  <path d="M456 96 Q495 74 534 96" fill="none" style="stroke: var(--fig-line); stroke-width: 1.4" marker-end="url(#m1ch-a)"/>
+  <text x="495" y="72" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">&#955;</text>
+
+  <!-- backward arrows (departures) -->
+  <path d="M174 124 Q135 146 96 124" fill="none" style="stroke: var(--fig-line); stroke-width: 1.4" marker-end="url(#m1ch-a)"/>
+  <text x="135" y="160" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">&#956;(1)</text>
+  <path d="M284 124 Q245 146 206 124" fill="none" style="stroke: var(--fig-line); stroke-width: 1.4" marker-end="url(#m1ch-a)"/>
+  <text x="245" y="160" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">2&#956;(2)</text>
+  <path d="M424 124 Q391 142 384 128" fill="none" style="stroke: var(--fig-line); stroke-width: 1.4"/>
+  <path d="M356 128 Q349 144 316 124" fill="none" style="stroke: var(--fig-line); stroke-width: 1.4" marker-end="url(#m1ch-a)"/>
+  <path d="M534 124 Q495 146 456 124" fill="none" style="stroke: var(--fig-line); stroke-width: 1.4" marker-end="url(#m1ch-a)"/>
+  <text x="495" y="160" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">B&#956;(B)</text>
+
+  <text x="320" y="200" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">departures speed up with the batch until the cap at B, and the service rate</text>
+  <text x="320" y="216" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">in every state comes from the work model above</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg viewBox="0 0 640 320" role="img" aria-label="Predicted latency tracks measured latency along the diagonal for both models" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="m1ft-m" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-muted)"/>
+    </marker>
+  </defs>
+
+  <!-- axes -->
+  <line x1="70" y1="262" x2="612" y2="262" style="stroke: var(--fig-muted); stroke-width: 1.25" marker-end="url(#m1ft-m)"/>
+  <line x1="70" y1="262" x2="70" y2="38" style="stroke: var(--fig-muted); stroke-width: 1.25" marker-end="url(#m1ft-m)"/>
+  <text x="340" y="292" text-anchor="middle" font-size="12.5" style="fill: var(--fig-muted)">measured latency</text>
+  <text x="46" y="150" text-anchor="middle" font-size="12.5" style="fill: var(--fig-muted)" transform="rotate(-90 46 150)">predicted latency</text>
+
+  <!-- y = x -->
+  <line x1="80" y1="252" x2="560" y2="70" stroke-dasharray="6 4" style="stroke: var(--fig-muted); stroke-width: 1.2"/>
+  <text x="577" y="66" font-size="11.5" style="fill: var(--fig-muted)">y = x</text>
+
+  <!-- legend -->
+  <circle cx="96" cy="52" r="4.5" style="fill: var(--fig-rcu)"/>
+  <text x="108" y="56" font-size="12" style="fill: var(--fig-line)">Llama-3.1-8B</text>
+  <path d="M218 47 L223 56 L213 56 z" style="fill: var(--fig-rwl)"/>
+  <text x="230" y="56" font-size="12" style="fill: var(--fig-line)">Qwen2.5-14B</text>
+
+  <!-- Llama points -->
+  <circle cx="104" cy="247" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="114" cy="241" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="128" cy="231" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="138" cy="228" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="152" cy="230" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="176" cy="212" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="205" cy="208" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="234" cy="189" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="262" cy="187" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="296" cy="167" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="330" cy="162" r="4" style="fill: var(--fig-rcu)"/>
+  <circle cx="368" cy="139" r="4" style="fill: var(--fig-rcu)"/>
+
+  <!-- Qwen points -->
+  <path d="M138 231 L143 240 L133 240 z" style="fill: var(--fig-rwl)"/>
+  <path d="M176 204 L181 213 L171 213 z" style="fill: var(--fig-rwl)"/>
+  <path d="M224 200 L229 209 L219 209 z" style="fill: var(--fig-rwl)"/>
+  <path d="M272 166 L277 175 L267 175 z" style="fill: var(--fig-rwl)"/>
+  <path d="M320 165 L325 174 L315 174 z" style="fill: var(--fig-rwl)"/>
+  <path d="M358 131 L363 140 L353 140 z" style="fill: var(--fig-rwl)"/>
+  <path d="M397 139 L402 148 L392 148 z" style="fill: var(--fig-rwl)"/>
+  <path d="M435 98 L440 107 L430 107 z" style="fill: var(--fig-rwl)"/>
+  <path d="M474 114 L479 123 L469 123 z" style="fill: var(--fig-rwl)"/>
+  <path d="M512 65 L517 74 L507 74 z" style="fill: var(--fig-rwl)"/>
+</svg>
