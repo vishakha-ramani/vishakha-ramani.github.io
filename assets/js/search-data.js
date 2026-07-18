@@ -30,7 +30,47 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/now/";
           },
-        },{id: "books-the-godfather",
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "post-freshness-has-a-memory-bill",
+        
+          title: "Freshness has a memory bill",
+        
+        description: "Part three of a series on my PhD work. How much memory Read-Copy-Update spends to keep information fresh, and why the bill stays bounded.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/freshness-has-a-memory-bill/";
+          
+        },
+      },{id: "post-the-router-that-measured-freshness",
+        
+          title: "The router that measured freshness",
+        
+        description: "Part two of a series on my PhD work. A DPDK packet forwarding testbed that measures the age of the information it delivers.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/the-router-that-measured-freshness/";
+          
+        },
+      },{id: "post-a-lock-can-make-data-fresher",
+        
+          title: "A lock can make data fresher",
+        
+        description: "Part one of a series on my PhD work. Comparing Read-Copy-Update and Readers-Writer locks when the metric is information freshness rather than throughput.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/a-lock-can-make-data-fresher/";
+          
+        },
+      },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
