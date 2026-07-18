@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-when-a-pipeline-should-stop-working",
+        },{id: "post-an-llm-server-in-three-numbers",
+        
+          title: "An LLM server in three numbers",
+        
+        description: "A note on recent work with Asser Tantawi. A queueing model of LLM inference with three hardware parameters, accurate enough to drive an autoscaler and simple enough to tune itself.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/an-llm-server-in-three-numbers/";
+          
+        },
+      },{id: "post-when-a-pipeline-should-stop-working",
         
           title: "When a pipeline should stop working",
         
