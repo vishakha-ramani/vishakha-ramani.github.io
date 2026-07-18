@@ -8,11 +8,13 @@ nav_order: 5
 
 A running tracker of what I am following in professional road cycling, updated when something noteworthy happens.
 
-**Last updated.** 2026-06-09.
+**Last updated.** 2026-07-18.
 
 ## Right now
 
-**Tour Auvergne-Rhône-Alpes (Dauphiné) 2026.** Stage 3 of 8 today (a 28.4 km TTT in Perreux), race runs through June 13. Alex Baudin (EF Education-EasyPost) leads the GC after a remarkable stage 1, where he spent 120 km in the break and rode the final 28 km solo into Saint-Ismier. Anthon Charmig (Uno-X Mobility) won stage 2 solo from a break but did not take the jersey — EF rode tempo to protect Baudin's lead. Neither Pogačar nor Vingegaard are in the race, which gives the whole week a different character: Jorgenson lost time on stage 1 and is already frustrated ("You can't follow everyone"), Evenepoel is absent despite his bike appearing at sign-on, and Wout van Aert is making his return to racing here for the first time since Paris-Roubaix.
+**Tour de France 2026.** Stage 14 today, race runs through July 26 in Paris. Tadej Pogačar (UAE Team Emirates XRG) is in yellow and turning the GC into a procession: he crested the Tourmalet alone on stage 6 to win by 2'38" and take the jersey, then soloed again today over the Col du Haag into Le Markstein to stretch his lead. Jonas Vingegaard (Visma-Lease a Bike) is second at 4'30", Remco Evenepoel (Red Bull-Bora-Hansgrohe) third at 5'04" on his Tour debut, and the story of the race is behind them: 19-year-old Paul Seixas (Decathlon CMA CGM) sits fourth and holds the white jersey, ahead of Juan Ayuso and Isaac del Toro. The Grand Départ was in Barcelona — the first stages in Catalonia were ridden past wildfires, and stage 9 into Ussel was cut by 30 km under a red heatwave warning and raced in roughly 38°C, which set off another round of arguments about moving the race calendar out of high summer. Mathieu van der Poel has taken a mountain-breakaway stage; Mads Pedersen leads the green jersey comfortably, winning the sprint duel over Tim Merlier and Olav Kooij on the flatter days.
+
+**Tour Auvergne-Rhône-Alpes (Dauphiné) 2026.** Finished June 13. Isaac del Toro (UAE Team Emirates XRG) took the overall in a race run without Pogačar or Vingegaard, which turned it into a genuinely open week rather than a Tour tune-up. Alex Baudin (EF Education-EasyPost) had lit it up early, spending 120 km in the break on stage 1 and riding the final 28 km solo into Saint-Ismier to lead the GC, but UAE's strength through the mountains told in the end. Wout van Aert used the race as his return to competition after Paris-Roubaix.
 
 **Giro d'Italia Women 2026.** Finished June 7. Demi Vollering (FDJ United-SUEZ) won the title in dramatic fashion, overturning Anna van der Breggen's 1'10" GC lead on the final stage. Antonia Niedermaier (Canyon-SRAM) finished second overall; van der Breggen dropped to third, saying "I tried, and I kept the pace in it, but it was not enough." Vollering said before her decisive move: "I had to dare to lose it all." Elisa Balsamo took the points classification, Isabella Holmgren the white jersey, and Lidl-Trek the team prize. The win also completes what has been an extraordinary women's spring for Vollering — Omloop, Flanders, Flèche Wallonne, Liège, and now the Giro.
 
@@ -32,7 +34,6 @@ Demi Vollering's first season at FDJ-Suez has been a sweep. Omloop Het Nieuwsbla
 
 ## What I'm watching for next
 
-- The remaining Dauphiné stages through June 13. With Pogačar and Vingegaard both absent, this is a race without a clear favorite for the GC, which makes it genuinely interesting rather than just a tune-up. The TTT today will reshuffle things; the mountain stages this week will tell us something about who is ready for July.
-- The Tour de Suisse (14–21 June). Pidcock is reported to be altitude training and targeting the race. Vingegaard will likely appear here given his Giro form.
-- The Tour de France in July, where Pogačar and Vingegaard are the obvious favorites and the rest of the GC field is unusually thin. The Grand Départ is in Barcelona, where Catalan independence groups have announced plans for "major protests."
-- The Tour de France Femmes later in the summer, with Vollering chasing the title she lost by four seconds in 2024. After this spring, she is in the form of her career.
+- The Tour's final week. Barring a crash or an off day, the yellow jersey looks settled, so the interest is in the fight behind: Vingegaard, Evenepoel, Seixas, Ayuso, and del Toro are separated by under two minutes, and the Alpe d'Huez summit finishes still to come will sort the rest of the podium. Whether Seixas can hold the white jersey — and the second week's climbs — into Paris is the sub-plot worth following.
+- The green jersey math. Pedersen has been the strongest fast man in the race, but the remaining mountain days and the intermediate sprints could still let Merlier or Milan claw back points if the flat finishes fall their way.
+- The Tour de France Femmes later in the summer, with Vollering chasing the title she lost by four seconds in 2024. After this spring and the Giro, she is in the form of her career.
