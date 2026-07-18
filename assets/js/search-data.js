@@ -37,7 +37,40 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-freshness-has-a-memory-bill",
+        },{id: "post-when-a-pipeline-should-stop-working",
+        
+          title: "When a pipeline should stop working",
+        
+        description: "Part three of a second series on my PhD work. In multi-step update processing, busy servers can waste power on results that make no one better informed.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/when-a-pipeline-should-stop-working/";
+          
+        },
+      },{id: "post-the-best-time-to-read-memory",
+        
+          title: "The best time to read memory",
+        
+        description: "Part two of a second series on my PhD work. The optimal policy for sampling shared memory turns out to be a threshold with a closed form.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/the-best-time-to-read-memory/";
+          
+        },
+      },{id: "post-sometimes-fresher-means-waiting",
+        
+          title: "Sometimes fresher means waiting",
+        
+        description: "Part one of a second series on my PhD work. Why a decision process that reads shared data and computes on it should sometimes sit idle before reading again.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/sometimes-fresher-means-waiting/";
+          
+        },
+      },{id: "post-freshness-has-a-memory-bill",
         
           title: "Freshness has a memory bill",
         
