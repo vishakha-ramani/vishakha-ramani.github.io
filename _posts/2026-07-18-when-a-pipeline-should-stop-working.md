@@ -38,11 +38,21 @@ We built the series side as a family of four queueing disciplines, distinguished
 
 The parallel side is a spectrum of how much the two servers know about each other. At one end, each server runs both steps of its own update independently and delivers whenever it happens to finish. The coordinated alternating policy adds awareness, so both servers start on the same fresh update, and a server that falls behind abandons its work and restarts fresh once its twin carries a newer update into step two. The shared-intermediate policy goes furthest. Whichever server finishes step one first hands the intermediate result to both, they attack step two together, and the pair advances through the pipeline in lockstep. That last policy effectively fuses two processors into a single server that runs each step at twice the rate and never duplicates work.
 
+<figure class="blog-fig">
+  {% include blog/figs/s2-policies.svg %}
+  <figcaption>The three parallel policies as a spectrum of coordination. The more each server knows about its twin, the less power it spends on updates that cannot help.</figcaption>
+</figure>
+
 Analytically, the series designs yield to the stochastic hybrid systems machinery that runs through the rest of my dissertation. The parallel designs forced an extension. When servers deliver independently, an arriving update only matters if it is fresher than what the monitor already holds, so the monitor's age is a running minimum over competing deliveries. Standard age bookkeeping cannot express that, and the fix is to carry auxiliary state variables that track minima of ages across servers, a device we adapted from the age-of-gossip literature. Getting those reset maps right is the technical heart of the paper's parallel results.
 
 Then comes the optimization. Fix a power budget and ask how fast each step should run. Two structural facts make the problem tractable. In every model we analyzed, the average age at the monitor comes out as a function of the rate ratio $$\rho = \mu_1/\mu_2$$ divided by the step two rate $$\mu_2$$. And the power constraint caps $$\mu_2$$ through a quantity we called the power-weighted processor activity, which also depends only on $$\rho$$. A two-variable design problem therefore collapses to a one-dimensional search over the ratio. For the preemptive series design, the age is $$\tfrac{1}{\mu_2}(1 + \tfrac{1}{\rho})$$, and pushing the budget through the constraint puts the optimum at $$\rho^* \approx 0.846$$.
 
 Two findings hold across every model we studied. The second step should always run at least as fast as the first, and no model wants the ratio above one. A slow exit stage is a bottleneck where nearly finished updates sit and age, which is the worst place to save power. And the optimal ratio does not depend on the size of the budget. The right split between the steps is structural, so extra power should scale both steps together rather than shift the balance.
+
+<figure class="blog-fig">
+  {% include blog/figs/s2-ratio.svg %}
+  <figcaption>An illustrative version of the optimization result. More power lowers the whole curve, but the age-minimizing split between the steps stays at the same ratio, with step two always faster.</figcaption>
+</figure>
 
 The ranking of designs held surprises too. Among series disciplines, preemption in service wins, consistent with the freshness folklore that new should replace old, and the gap is not subtle. At the same service rates, the blocking design delivers exactly twice the average age of the preemptive one. Less expected, synchronous service beats the asynchronous designs, meaning one update moving through the system at a time outperforms designs that keep more in flight only to discard or delay them. Parallelism helps on top of that. Running the synchronous discipline on two independent servers, each on half the power budget, already beats its series counterpart, and the best design overall is the shared-intermediate policy. The common thread is that coordination is what eliminates wasted power. Servers that know what their peers have delivered do not burn watts on obsolete work.
 
