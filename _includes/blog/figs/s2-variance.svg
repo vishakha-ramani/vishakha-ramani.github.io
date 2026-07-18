@@ -1,0 +1,39 @@
+<svg viewBox="0 0 640 330" role="img" aria-label="With low variance in computation time zero-wait is nearly optimal, with high variance it is clearly suboptimal" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="s2vr-m" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-muted)"/>
+    </marker>
+  </defs>
+
+  <!-- axes -->
+  <line x1="70" y1="262" x2="612" y2="262" style="stroke: var(--fig-muted); stroke-width: 1.25" marker-end="url(#s2vr-m)"/>
+  <line x1="70" y1="262" x2="70" y2="38" style="stroke: var(--fig-muted); stroke-width: 1.25" marker-end="url(#s2vr-m)"/>
+  <text x="340" y="292" text-anchor="middle" font-size="12.5" style="fill: var(--fig-muted)">reading rate</text>
+  <text x="46" y="150" text-anchor="middle" font-size="12.5" style="fill: var(--fig-muted)" transform="rotate(-90 46 150)">average age at the monitor</text>
+
+  <!-- zero-wait marker -->
+  <line x1="575" y1="262" x2="575" y2="78" stroke-dasharray="3 4" style="stroke: var(--fig-muted); stroke-width: 1"/>
+  <text x="612" y="56" text-anchor="end" font-size="11.5" style="fill: var(--fig-muted)">zero-wait,</text>
+  <text x="612" y="70" text-anchor="end" font-size="11.5" style="fill: var(--fig-muted)">read the instant computing ends</text>
+
+  <!-- legend -->
+  <rect x="90" y="50" width="18" height="4" rx="2" style="fill: var(--fig-line)"/>
+  <text x="114" y="56" font-size="12" style="fill: var(--fig-line)">low variance</text>
+  <rect x="205" y="50" width="18" height="4" rx="2" style="fill: var(--fig-rcu)"/>
+  <text x="229" y="56" font-size="12" style="fill: var(--fig-line)">moderate</text>
+  <rect x="295" y="50" width="18" height="4" rx="2" style="fill: var(--fig-rwl)"/>
+  <text x="319" y="56" font-size="12" style="fill: var(--fig-line)">heavy tail</text>
+
+  <!-- curves -->
+  <path d="M90 120 C230 190 430 225 575 232" fill="none" style="stroke: var(--fig-line); stroke-width: 2"/>
+  <path d="M90 105 C230 170 400 195 490 193 C530 190 560 182 575 176" fill="none" style="stroke: var(--fig-rcu); stroke-width: 2"/>
+  <path d="M90 90 C220 150 340 168 420 165 C480 160 540 120 575 88" fill="none" style="stroke: var(--fig-rwl); stroke-width: 2"/>
+
+  <!-- best-lazy markers on the heavy-tail curve -->
+  <circle cx="400" cy="165" r="4.5" style="fill: var(--fig-rwl)"/>
+  <text x="395" y="145" text-anchor="middle" font-size="11.5" style="fill: var(--fig-muted)">best lazy policy</text>
+
+  <!-- annotations -->
+  <text x="165" y="228" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">reads too rare,</text>
+  <text x="165" y="243" text-anchor="middle" font-size="12" style="fill: var(--fig-muted)">age dominated by waiting</text>
+</svg>

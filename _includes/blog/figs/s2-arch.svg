@@ -1,0 +1,44 @@
+<svg viewBox="0 0 640 350" role="img" aria-label="Two-step processing with servers in series or in parallel" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="s2ar-a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-line)"/>
+    </marker>
+  </defs>
+
+  <!-- step color key -->
+  <rect x="200" y="18" width="18" height="4" rx="2" style="fill: var(--fig-rcu)"/>
+  <text x="224" y="24" font-size="12" style="fill: var(--fig-line)">step 1</text>
+  <rect x="290" y="18" width="18" height="4" rx="2" style="fill: var(--fig-rwl)"/>
+  <text x="314" y="24" font-size="12" style="fill: var(--fig-line)">step 2</text>
+
+  <!-- series panel -->
+  <text x="60" y="70" font-size="13" font-weight="600" style="fill: var(--fig-line)">Servers in series</text>
+  <rect x="120" y="90" width="130" height="48" rx="6" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <rect x="120" y="90" width="130" height="6" rx="3" style="fill: var(--fig-rcu)"/>
+  <text x="185" y="120" text-anchor="middle" font-size="12" style="fill: var(--fig-line)">Server 1, step 1</text>
+  <line x1="250" y1="114" x2="296" y2="114" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#s2ar-a)"/>
+  <rect x="300" y="90" width="130" height="48" rx="6" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <rect x="300" y="90" width="130" height="6" rx="3" style="fill: var(--fig-rwl)"/>
+  <text x="365" y="120" text-anchor="middle" font-size="12" style="fill: var(--fig-line)">Server 2, step 2</text>
+  <line x1="430" y1="114" x2="486" y2="114" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#s2ar-a)"/>
+  <circle cx="522" cy="114" r="26" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="522" y="119" text-anchor="middle" font-size="11.5" style="fill: var(--fig-line)">Monitor</text>
+  <text x="275" y="162" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">each server owns one step, updates age while queued between them</text>
+
+  <!-- parallel panel -->
+  <text x="60" y="208" font-size="13" font-weight="600" style="fill: var(--fig-line)">Servers in parallel</text>
+  <rect x="120" y="228" width="200" height="44" rx="6" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <rect x="120" y="228" width="100" height="6" rx="3" style="fill: var(--fig-rcu)"/>
+  <rect x="220" y="228" width="100" height="6" rx="3" style="fill: var(--fig-rwl)"/>
+  <text x="220" y="255" text-anchor="middle" font-size="12" style="fill: var(--fig-line)">Server 1, steps 1 and 2</text>
+  <rect x="120" y="286" width="200" height="44" rx="6" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <rect x="120" y="286" width="100" height="6" rx="3" style="fill: var(--fig-rcu)"/>
+  <rect x="220" y="286" width="100" height="6" rx="3" style="fill: var(--fig-rwl)"/>
+  <text x="220" y="313" text-anchor="middle" font-size="12" style="fill: var(--fig-line)">Server 2, steps 1 and 2</text>
+  <line x1="320" y1="250" x2="482" y2="272" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#s2ar-a)"/>
+  <line x1="320" y1="308" x2="482" y2="286" style="stroke: var(--fig-line); stroke-width: 1.5" marker-end="url(#s2ar-a)"/>
+  <circle cx="522" cy="279" r="26" style="fill: none; stroke: var(--fig-line); stroke-width: 1.5"/>
+  <text x="522" y="284" text-anchor="middle" font-size="11.5" style="fill: var(--fig-line)">Monitor</text>
+  <text x="522" y="322" text-anchor="middle" font-size="10.5" style="fill: var(--fig-muted)">keeps the freshest</text>
+  <text x="522" y="336" text-anchor="middle" font-size="10.5" style="fill: var(--fig-muted)">update it receives</text>
+</svg>

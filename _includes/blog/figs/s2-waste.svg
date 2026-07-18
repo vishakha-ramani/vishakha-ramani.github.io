@@ -1,0 +1,39 @@
+<svg viewBox="0 0 640 300" role="img" aria-label="A parallel server keeps processing an update the monitor has already outgrown, wasting power" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="s2ws-a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-line)"/>
+    </marker>
+    <marker id="s2ws-m" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" style="fill: var(--fig-muted)"/>
+    </marker>
+    <pattern id="s2ws-hatch" width="9" height="9" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="9" style="stroke: var(--fig-line)" stroke-width="1.4" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <!-- server A lane -->
+  <text x="20" y="76" font-size="12" style="fill: var(--fig-muted)">Server A</text>
+  <line x1="90" y1="72" x2="590" y2="72" style="stroke: var(--fig-muted); stroke-width: 0.6"/>
+  <rect x="180" y="58" width="140" height="27" rx="4" style="fill: var(--fig-rcu)"/>
+  <text x="250" y="48" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">processing a newer update</text>
+
+  <!-- server B lane -->
+  <text x="20" y="146" font-size="12" style="fill: var(--fig-muted)">Server B</text>
+  <line x1="90" y1="142" x2="590" y2="142" style="stroke: var(--fig-muted); stroke-width: 0.6"/>
+  <rect x="120" y="128" width="330" height="27" rx="4" style="fill: var(--fig-rwl)"/>
+  <rect x="320" y="128" width="130" height="27" rx="4" style="fill: url(#s2ws-hatch)"/>
+  <text x="205" y="118" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">processing an older update</text>
+  <text x="385" y="176" text-anchor="middle" font-size="11.5" font-weight="600" style="fill: var(--fig-line)">wasted power</text>
+
+  <!-- deliveries -->
+  <line x1="320" y1="85" x2="320" y2="222" style="stroke: var(--fig-line); stroke-width: 1.4" marker-end="url(#s2ws-a)"/>
+  <line x1="450" y1="155" x2="450" y2="222" stroke-dasharray="4 3" style="stroke: var(--fig-muted); stroke-width: 1.2" marker-end="url(#s2ws-m)"/>
+
+  <!-- monitor lane -->
+  <text x="20" y="236" font-size="12" style="fill: var(--fig-muted)">Monitor</text>
+  <line x1="90" y1="232" x2="590" y2="232" style="stroke: var(--fig-muted); stroke-width: 1.1" marker-end="url(#s2ws-m)"/>
+  <circle cx="320" cy="232" r="5" style="fill: var(--fig-line)"/>
+  <text x="320" y="256" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">accepted, age drops</text>
+  <circle cx="450" cy="232" r="5" style="fill: var(--fig-surface); stroke: var(--fig-muted); stroke-width: 1.5"/>
+  <text x="463" y="256" text-anchor="middle" font-size="11" style="fill: var(--fig-muted)">older on arrival, discarded</text>
+</svg>
