@@ -5,28 +5,45 @@
   Optional series param selects the series (default "freshness"):
     {% include series_nav.liquid series="timing" part=1 %}
 {% endcomment %}
-{% if include.series == "timing" %}
-  {% assign series_name = "Reading and computing on time" %}
-  {% assign series_urls = "/blog/2026/sometimes-fresher-means-waiting/|/blog/2026/the-best-time-to-read-memory/|/blog/2026/when-a-pipeline-should-stop-working/" | split: "|" %}
-  {% assign series_titles = "Sometimes fresher means waiting|The best time to read memory|When a pipeline should stop working" | split: "|" %}
+{% if include.series == 'timing' %}
+  {% assign series_name = 'Reading and computing on time' %}
+  {% assign series_urls = '/blog/2026/sometimes-fresher-means-waiting/|/blog/2026/the-best-time-to-read-memory/|/blog/2026/when-a-pipeline-should-stop-working/'
+    | split: '|'
+  %}
+  {% assign series_titles = 'Sometimes fresher means waiting|The best time to read memory|When a pipeline should stop working' | split: '|' %}
 {% else %}
-  {% assign series_name = "Freshness in shared memory" %}
-  {% assign series_urls = "/blog/2026/a-lock-can-make-data-fresher/|/blog/2026/the-router-that-measured-freshness/|/blog/2026/freshness-has-a-memory-bill/" | split: "|" %}
-  {% assign series_titles = "A lock can make data fresher|The router that measured freshness|Freshness has a memory bill" | split: "|" %}
+  {% assign series_name = 'Freshness in shared memory' %}
+  {% assign series_urls = '/blog/2026/a-lock-can-make-data-fresher/|/blog/2026/the-router-that-measured-freshness/|/blog/2026/freshness-has-a-memory-bill/'
+    | split: '|'
+  %}
+  {% assign series_titles = 'A lock can make data fresher|The router that measured freshness|Freshness has a memory bill' | split: '|' %}
 {% endif %}
 {% assign cur = include.part | minus: 1 %}
-{% if include.position == "footer" %}
-<div class="series-nav-footer">
-  <span>
-    {% if include.part > 1 %}{% assign prev = cur | minus: 1 %}&larr; <a href="{{ series_urls[prev] | relative_url }}">{{ series_titles[prev] }}</a>{% endif %}
-  </span>
-  <span>
-    {% if include.part < 3 %}{% assign next = cur | plus: 1 %}<a href="{{ series_urls[next] | relative_url }}">{{ series_titles[next] }}</a> &rarr;{% endif %}
-  </span>
-</div>
+{% if include.position == 'footer' %}
+  <div class="series-nav-footer">
+    <span>
+      {% if include.part > 1 -%}
+        {%- assign prev = cur | minus: 1 %}&larr; <a href="{{ series_urls[prev] | relative_url }}">{{ series_titles[prev] }}</a>
+      {%- endif %}
+    </span>
+    <span>
+      {% if include.part < 3 -%}
+        {%- assign next = cur | plus: 1 -%}
+        <a href="{{ series_urls[next] | relative_url }}">{{ series_titles[next] }}</a> &rarr;
+      {%- endif %}
+    </span>
+  </div>
 {% else %}
-<div class="series-nav">
-  <span class="series-nav-title">{{ series_name }} · Part {{ include.part }} of 3</span><br>
-  {% for title in series_titles %}{% assign i = forloop.index0 %}{% if i == cur %}{{ title }}{% else %}<a href="{{ series_urls[i] | relative_url }}">{{ title }}</a>{% endif %}{% unless forloop.last %} · {% endunless %}{% endfor %}
-</div>
+  <div class="series-nav">
+    <span class="series-nav-title">{{ series_name }} · Part {{ include.part }} of 3</span><br>
+    {% for title in series_titles -%}
+      {%- assign i = forloop.index0 -%}
+      {%- if i == cur -%}
+        {{- title -}}
+      {%- else -%}
+        <a href="{{ series_urls[i] | relative_url }}">{{ title }}</a>
+      {%- endif -%}
+      {%- unless forloop.last %} · {% endunless -%}
+    {%- endfor %}
+  </div>
 {% endif %}
