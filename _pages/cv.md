@@ -2,8 +2,8 @@
 layout: page
 permalink: /cv/
 title: cv
-nav: false
-nav_order: 4
+nav: true
+nav_order: 7
 cv_pdf: /assets/pdf/cv_academic.pdf
 ---
 

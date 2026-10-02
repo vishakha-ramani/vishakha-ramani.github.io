@@ -3,7 +3,7 @@ layout: page
 permalink: /talks/
 title: talks
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 **PhD Dissertation Defense, Rutgers University (2024).** [_Storing, Retrieving, and Processing Updates: A Timeliness Perspective_](/assets/pdf/Thesis_VR.pdf). Watch on YouTube at [youtube.com/watch?v=Sk6ZEKycGzU](https://www.youtube.com/watch?v=Sk6ZEKycGzU).

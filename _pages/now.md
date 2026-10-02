@@ -3,7 +3,7 @@ layout: page
 permalink: /now/
 title: now
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 A running tracker of what I am following in professional road cycling, updated when something noteworthy happens.
