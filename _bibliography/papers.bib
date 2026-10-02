@@ -1,26 +1,19 @@
 ---
 ---
 
-@article{ramani2026disaggregate,
-  title={Performance Modeling for Disaggregated Prefill-Decode LLM Inference Serving},
-  author={Ramani, Vishakha and Tantawi, Asser},
-  booktitle={Manuscript in preparation},
-  year={2026},
-  selected={true},
-  abstract={Modern large language model inference systems increasingly disaggregate the prefill and decode phases of generation onto distinct hardware pools. This separation improves utilization, but it also breaks the single-queue abstraction that classical queueing analyses rely on. We develop a performance model for disaggregated prefill-decode (P/D) inference that treats the two phases as coupled queueing stations with phase-dependent service requirements. The model captures the interaction between prefill batching, decode iteration scheduling, and KV-cache transfer, and yields closed-form expressions for end-to-end latency and throughput under realistic request mixes. We use the model to characterize when disaggregation strictly dominates a co-located baseline and to derive sizing rules for the prefill and decode pools.}
-}
-
 @article{ramani2026queueing,
-  title={A Queueing-Theoretic Framework for Scheduling and Autoscaling LLM Inference},
-  author={Ramani, Vishakha},
-  booktitle={Manuscript in preparation},
+  title={An Approximate Queueing Model of {LLM} Inference Serving for {SLO}-Driven Autoscaling},
+  author={Ramani, Vishakha and Tantawi, Asser N.},
+  journal={arXiv preprint arXiv:2609.20957},
   year={2026},
+  arxiv={2609.20957},
+  pdf={https://arxiv.org/pdf/2609.20957},
   selected={true},
-  abstract={Production large language model inference deployments must hold latency Service Level Objectives under bursty, heterogeneous request mixes while keeping accelerator utilization high. We propose a queueing-theoretic framework that unifies request-level scheduling and replica-level autoscaling for prefill-decode disaggregated systems. The framework treats Service Level Objective compliance as a stability constraint on a multi-class queueing network and uses Lyapunov drift-plus-penalty optimization to derive scheduling and scaling policies that are provably stable whenever the offered load is within capacity. We show how the framework specializes to the Workload Variant Autoscaler design used in the open-source llm-d project and how it generalizes to alternative SLO formulations.}
+  abstract={We present a tractable approximate queueing model, built on Markovian assumptions, of how LLM inference servers interleave prefill and decode work. Each model-accelerator pair is described by three parameters: a fixed per-iteration overhead, a per-token compute cost, and a per-token KV-cache access cost. Mean-value analysis of per-iteration work is combined with a state-dependent Markov chain over batch occupancy to predict mean time to first token (TTFT) and inter-token latency (ITL), and the parameters can be fitted online from observed latencies. On an H100 GPU under light to moderate load, mean ITL error is about 5\% for Llama-3.1-8B and 8\% for Qwen2.5-14B, with TTFT errors of 14\% and 16\%. An autoscaling controller built on the model tracks a fourfold load ramp on an OpenShift H100 cluster, missing the SLO in 7 of 127 control cycles with in-loop median prediction errors of at most 5\% for TTFT and 9\% for ITL, compared with 27 of 128 cycles for a decode-throughput analyzer without a latency target.}
 }
 
 @inproceedings{malvankar2026wva,
-  title={WVA: A Workload Variant Autoscaler for Disaggregated LLM Inference Serving},
+  title={WVA: A Global Optimization Control Plane for llm-d},
   author={Malvankar, Abhishek and Ramani, Vishakha and others},
   booktitle={IEEE International Conference on Cloud Computing (CLOUD)},
   year={2026},
