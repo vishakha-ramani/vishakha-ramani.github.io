@@ -68,9 +68,10 @@ the PDF would need a template change; the `/cv/` page already offers the PDF.
    - Autoscaling in llm-d (co-architect of WVA) → WVA repo.
    - Age of Information in computing systems (PhD, Rutgers 2024, advised by Roy Yates) → thesis PDF.
    A "More on my research →" link to `/research/`.
-3. **News** (enable al-folio `announcements`, limit 4, not scrollable): entries in
-   `_news/` for the arXiv preprint (2026) and the CLOUD 2026 WVA paper. Further
-   items are added only if the user supplies dates.
+3. **News**: a hand-written Markdown list in `about.md` (most recent first, at
+   most 4 items). al-folio's built-in announcements block was not used because
+   its heading links to `/news/`, which this site does not have, and fixing that
+   would mean editing the layout.
 4. **Selected papers**: `selected_papers: true`. Selected set is the four
    entries already flagged: the arXiv preprint, WVA (CLOUD 2026), Bottlenecks of
    AI Inference (Real-Time Systems), and Lock-Based or Lock-Less (INFOCOM 2023).
