@@ -28,6 +28,13 @@ check "dark accent token"     'grep -q "#5fb3b3" $S/assets/css/main.css'
 check "760px column"          'grep -q "760px" $S/assets/css/main.css'
 check "labels skip blog posts" 'grep -q "article:not(.post-content) h2" _sass/_refined.scss'
 
+check "body weight 400 so bold renders" 'grep -A4 "^body {" _sass/_refined.scss | grep -q "font-weight: 400"'
+check "strong is explicit 600"  'grep -A2 "^strong" _sass/_refined.scss | grep -q "font-weight: 600"'
+check "italic links keep accent" 'grep -q "^a em" _sass/_refined.scss'
+check "home hides abstracts"  'grep -q "clearfix ~ .publications div.abstract" _sass/_refined.scss'
+check "dead Abs button hidden" 'grep -q "a.abstract" _sass/_refined.scss'
+check "small social icons"    'grep -A1 "contact-icons" _sass/_refined.scss | grep -q "font-size: 1.75rem"'
+
 # Task 3: research page and nav
 check "research page built"   '[ -f $S/research/index.html ]'
 check "nav has research"      'grep -q "href=\"/research/\"" $S/index.html'

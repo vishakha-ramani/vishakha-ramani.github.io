@@ -6,8 +6,10 @@
 $serif: "Source Serif 4", Georgia, "Times New Roman", serif;
 $sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 
+// mdb.min.css sets body weight 300, which makes <strong> ("bolder") only 400.
 body {
   font-family: $serif;
+  font-weight: 400;
   font-size: 1.0625rem;
   line-height: 1.7;
   background-color: var(--global-bg-color);
@@ -28,6 +30,11 @@ h6,
 .desc,
 footer {
   font-family: $sans;
+}
+
+strong,
+b {
+  font-weight: 600;
 }
 
 h1,
@@ -85,6 +92,12 @@ a {
   }
 }
 
+// al-folio colors em/strong explicitly, which would override link color.
+a em,
+a strong {
+  color: inherit;
+}
+
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
@@ -138,4 +151,15 @@ footer {
       text-decoration: none;
     }
   }
+}
+
+// This al-folio version renders abstracts expanded, so the "Abs" toggle does
+// nothing. Hide the button, and keep the homepage's selected list compact.
+.publications a.abstract,
+.clearfix ~ .publications div.abstract {
+  display: none;
+}
+
+.social .contact-icons {
+  font-size: 1.75rem;
 }
