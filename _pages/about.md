@@ -24,7 +24,7 @@ I am a Research Staff Member at IBM T. J. Watson Research Center in Yorktown Hei
 
 ## Research
 
-**Queueing models of LLM inference.** Three hardware parameters predict time to first token and inter-token latency closely enough to drive an autoscaler. [Paper](https://arxiv.org/abs/2609.20957) · [Blog post]({% post_url 2026-07-18-an-llm-server-in-three-numbers %})
+**Queueing models of LLM inference.** Three parameters per model–GPU pair predict time to first token and inter-token latency closely enough to drive an autoscaler. [Paper](https://arxiv.org/abs/2609.20957) · [Blog post]({% post_url 2026-07-18-an-llm-server-in-three-numbers %})
 
 **Autoscaling in llm-d.** I co-architected the Workload Variant Autoscaler, which sizes LLM inference deployments against latency targets. [Code](https://github.com/llm-d/llm-d-workload-variant-autoscaler)
 

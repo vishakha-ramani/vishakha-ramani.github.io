@@ -53,6 +53,11 @@ check "home selected papers"  'grep -q "Lock-Based or Lock-Less" $S/index.html'
 check "no bib search box"     '! grep -q "id=\"bibsearch\"" $S/publications/index.html'
 check "preprint badge"        'grep -q "Preprint" $S/publications/index.html'
 
+check "home: params per model-GPU pair" '! grep -q "Three hardware parameters" _pages/about.md && grep -q "per model–GPU pair" _pages/about.md'
+check "research: PhD threads link papers" '(for k in ramani2024memory ramani2023multisource ramani2023locks ramani2024rcu ramani2024multistep; do grep -q "/publications/#$k" $S/research/index.html || exit 1; done)'
+check "research: 224 points, no retraining" 'grep -q "224 measurement points" $S/research/index.html && grep -q "per-deployment retraining" $S/research/index.html'
+check "dark hover text readable" 'sed -n "/html\[data-theme=\"dark\"\]/,/^}/p" _sass/_themes.scss | grep -q "hover-text-color: #15181c"'
+
 # Spec-wide
 check "no disaggregation"     '! grep -rqi disaggregat $S --include="*.html"'
 
