@@ -35,27 +35,29 @@
 
 ## File Structure
 
-| File | Responsibility |
-|---|---|
-| `bin/check-redesign.sh` (new) | Assertions on `_site/` and `_pages/` that encode the spec; used as each task's test |
-| `_sass/_refined.scss` (new) | Every new visual rule: fonts, scale, labels, links, profile, publication pills |
-| `assets/css/main.scss` | One added `@use "refined";` line |
-| `_sass/_themes.scss` | Token values only (light `:root` and `html[data-theme="dark"]`) |
-| `_config.yml` | `max_width`, Google Fonts URL, `bib_search` |
-| `_pages/research.md` (new) | Long-form research text |
-| `_pages/about.md` | Short homepage |
-| `_pages/cv.md`, `talks.md`, `blog.md`, `now.md`, `publications.md` | Nav flags/order only |
-| `_bibliography/papers.bib` | `abbr={Preprint}` on `ramani2026queueing` |
-| `docs/superpowers/specs/2026-10-02-site-redesign-design.md` | Record the news-list deviation |
+| File                                                               | Responsibility                                                                      |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| `bin/check-redesign.sh` (new)                                      | Assertions on `_site/` and `_pages/` that encode the spec; used as each task's test |
+| `_sass/_refined.scss` (new)                                        | Every new visual rule: fonts, scale, labels, links, profile, publication pills      |
+| `assets/css/main.scss`                                             | One added `@use "refined";` line                                                    |
+| `_sass/_themes.scss`                                               | Token values only (light `:root` and `html[data-theme="dark"]`)                     |
+| `_config.yml`                                                      | `max_width`, Google Fonts URL, `bib_search`                                         |
+| `_pages/research.md` (new)                                         | Long-form research text                                                             |
+| `_pages/about.md`                                                  | Short homepage                                                                      |
+| `_pages/cv.md`, `talks.md`, `blog.md`, `now.md`, `publications.md` | Nav flags/order only                                                                |
+| `_bibliography/papers.bib`                                         | `abbr={Preprint}` on `ramani2026queueing`                                           |
+| `docs/superpowers/specs/2026-10-02-site-redesign-design.md`        | Record the news-list deviation                                                      |
 
 ---
 
 ### Task 1: Spec check script
 
 **Files:**
+
 - Create: `bin/check-redesign.sh`
 
 **Interfaces:**
+
 - Produces: `bin/check-redesign.sh`, run from repo root after `bundle exec jekyll build`. It prints `ok` or `FAIL` per check and exits with the number of failures. Later tasks name checks by their exact label below.
 
 - [ ] **Step 1: Write the script**
@@ -136,12 +138,14 @@ git push
 ### Task 2: Visual system
 
 **Files:**
+
 - Create: `_sass/_refined.scss`
 - Modify: `assets/css/main.scss` (append one line after `@use "blog-figs";`)
 - Modify: `_sass/_themes.scss` (token lines inside `:root` near lines 9–20 and `html[data-theme="dark"]` near lines 79–90)
 - Modify: `_config.yml` (`max_width` line 62, `google_fonts.url.fonts` line 453)
 
 **Interfaces:**
+
 - Consumes: `bin/check-redesign.sh` from Task 1.
 - Produces: CSS variables `--global-theme-color`, `--global-text-color-light` and `--global-divider-color` with the new values. Sass variables `$serif` and `$sans` exist only inside `_refined.scss`.
 
@@ -161,7 +165,7 @@ max_width: 760px
 Replace the `fonts:` value under `third_party_libraries.google_fonts.url` with:
 
 ```yaml
-      fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Material+Icons&display=swap"
+fonts: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Material+Icons&display=swap"
 ```
 
 - [ ] **Step 3: Update theme tokens in `_sass/_themes.scss`**
@@ -169,29 +173,29 @@ Replace the `fonts:` value under `third_party_libraries.google_fonts.url` with:
 In the `:root` block, set these lines (keep every other line as it is):
 
 ```scss
-  --global-bg-color: #fbfaf7;
-  --global-text-color: #1f2328;
-  --global-text-color-light: #5b6470;
-  --global-theme-color: #0f6e6e;
-  --global-hover-color: #0f6e6e;
-  --global-footer-bg-color: #fbfaf7;
-  --global-footer-text-color: #5b6470;
-  --global-footer-link-color: #0f6e6e;
-  --global-divider-color: rgba(0, 0, 0, 0.08);
+--global-bg-color: #fbfaf7;
+--global-text-color: #1f2328;
+--global-text-color-light: #5b6470;
+--global-theme-color: #0f6e6e;
+--global-hover-color: #0f6e6e;
+--global-footer-bg-color: #fbfaf7;
+--global-footer-text-color: #5b6470;
+--global-footer-link-color: #0f6e6e;
+--global-divider-color: rgba(0, 0, 0, 0.08);
 ```
 
 In the `html[data-theme="dark"]` block, set:
 
 ```scss
-  --global-bg-color: #15181c;
-  --global-text-color: #e6e6e3;
-  --global-text-color-light: #9aa3ad;
-  --global-theme-color: #5fb3b3;
-  --global-hover-color: #5fb3b3;
-  --global-footer-bg-color: #15181c;
-  --global-footer-text-color: #9aa3ad;
-  --global-footer-link-color: #5fb3b3;
-  --global-divider-color: rgba(255, 255, 255, 0.1);
+--global-bg-color: #15181c;
+--global-text-color: #e6e6e3;
+--global-text-color-light: #9aa3ad;
+--global-theme-color: #5fb3b3;
+--global-hover-color: #5fb3b3;
+--global-footer-bg-color: #15181c;
+--global-footer-text-color: #9aa3ad;
+--global-footer-link-color: #5fb3b3;
+--global-divider-color: rgba(255, 255, 255, 0.1);
 ```
 
 Leave `--global-hover-text-color` unchanged. It is white text on the accent background, which works on both teals.
@@ -205,7 +209,14 @@ Leave `--global-hover-text-color` unchanged. It is white text on the accent back
  ******************************************************************************/
 
 $serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-$sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$sans:
+  "Inter",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Helvetica,
+  Arial,
+  sans-serif;
 
 body {
   font-family: $serif;
@@ -370,10 +381,12 @@ git push
 ### Task 3: Research page and navigation
 
 **Files:**
+
 - Create: `_pages/research.md`
 - Modify: front matter only of `_pages/publications.md`, `talks.md`, `blog.md`, `now.md`, `cv.md`
 
 **Interfaces:**
+
 - Consumes: the post `_posts/2026-07-18-an-llm-server-in-three-numbers.md` (through `post_url`).
 - Produces: the URL `/research/` and the nav order: about, research 2, publications 3, talks 4, blog 5, now 6, cv 7. Task 4 links to `/research/`.
 
@@ -437,13 +450,13 @@ See [publications](/publications/) for the papers behind each chapter.
 
 Set these front-matter values and change nothing else in each file:
 
-| File | `nav` | `nav_order` |
-|---|---|---|
-| `_pages/publications.md` | true | 3 |
-| `_pages/talks.md` | true | 4 |
-| `_pages/blog.md` | true | 5 |
-| `_pages/now.md` | true | 6 |
-| `_pages/cv.md` | true | 7 |
+| File                     | `nav` | `nav_order` |
+| ------------------------ | ----- | ----------- |
+| `_pages/publications.md` | true  | 3           |
+| `_pages/talks.md`        | true  | 4           |
+| `_pages/blog.md`         | true  | 5           |
+| `_pages/now.md`          | true  | 6           |
+| `_pages/cv.md`           | true  | 7           |
 
 - [ ] **Step 4: Build and run the checks**
 
@@ -470,10 +483,12 @@ git push
 ### Task 4: Homepage rewrite
 
 **Files:**
+
 - Modify: `_pages/about.md` (whole file)
 - Modify: `docs/superpowers/specs/2026-10-02-site-redesign-design.md` (the News item under "Home")
 
 **Interfaces:**
+
 - Consumes: `/research/` from Task 3; the `selected={true}` bib entries `ramani2026queueing`, `malvankar2026wva`, `abdelzaher2025bottlenecks` and `ramani2023locks`.
 
 - [ ] **Step 1: Confirm the Task 4 checks fail**
@@ -557,10 +572,12 @@ git push
 ### Task 5: Publications
 
 **Files:**
+
 - Modify: `_config.yml:59` (`bib_search`)
 - Modify: `_bibliography/papers.bib` (the `ramani2026queueing` entry)
 
 **Interfaces:**
+
 - Consumes: al-folio's `bib.liquid`, which renders `entry.abbr` as a badge in the left column.
 
 - [ ] **Step 1: Confirm the Task 5 checks fail**
@@ -634,6 +651,7 @@ Expected: 15 PNG files.
 - [ ] **Step 3: Review each screenshot against this checklist**
 
 Open each image with the Read tool.
+
 - Home: serif body, Inter headings, small uppercase RESEARCH / NEWS / SELECTED PUBLICATIONS labels with hairlines, photo about 180px on the right, teal links.
 - Dark: background `#15181c`, light text, light-teal links. No leftover purple or cyan.
 - Mobile: photo centered above the text, nav collapsed to the hamburger menu, no text cut off at the right edge.

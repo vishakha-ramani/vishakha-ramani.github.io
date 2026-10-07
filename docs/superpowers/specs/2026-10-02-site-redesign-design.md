@@ -67,7 +67,7 @@ the PDF would need a template change; the `/cv/` page already offers the PDF.
    - LLM inference performance modeling → arXiv:2609.20957 and the "three numbers" post.
    - Autoscaling in llm-d (co-architect of WVA) → WVA repo.
    - Age of Information in computing systems (PhD, Rutgers 2024, advised by Roy Yates) → thesis PDF.
-   A "More on my research →" link to `/research/`.
+     A "More on my research →" link to `/research/`.
 3. **News**: a hand-written Markdown list in `about.md` (most recent first, at
    most 4 items). al-folio's built-in announcements block was not used because
    its heading links to `/news/`, which this site does not have, and fixing that
@@ -81,13 +81,14 @@ the PDF would need a template change; the `/cv/` page already offers the PDF.
 ### Research (`_pages/research.md`, new, nav_order 2)
 
 Holds the current long-form homepage text, tightened by about 40%:
+
 - **At IBM**: modeling an inference server; ADRS / simulation and agentic search
   (Nous, BLIS). Each subsection ends with links to its paper or repo.
 - **PhD**: the three thesis threads (memory access, synchronization primitives,
   multi-step processing), each with paper links.
-Uses `###` subheadings. No `####`. Factual claims are preserved, not rewritten;
-tightening means removing repetition and background a reader can get from the
-linked papers.
+  Uses `###` subheadings. No `####`. Factual claims are preserved, not rewritten;
+  tightening means removing repetition and background a reader can get from the
+  linked papers.
 
 ### Publications (`_pages/publications.md`)
 
